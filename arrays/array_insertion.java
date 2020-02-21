@@ -11,31 +11,35 @@ public class array_insertion{
 			i++;
 		}
 		
-		printArray(sortedInsert(x,5));
+		sortedInsert(x,5);
+		printArray(x);
 		
     }
 	
 	public static int[] sortedInsert(int A[], int m){
-		int i = 0;
 		int index = A.length;
-		while(i < A.length){
-			if(A[i]> m){
+		for(int i = 0; i<A.length; i++){
+			if(A[i]>m){
 				index = i;
 				break;
-				//System.out.println("Index: ");
-				//System.out.println(index);
 			}
-			i++;
 		}
-		insert(A, m, index);
+		
+		for(int i = A.length - 1; i>index; i--)
+			A[i] = A[i-1];
+		
+		A[index] = m;
+
 		return A;
 	}
 	
+	/* This method is broken
 	public static void insert(int array[], int elem, int index){
 		for (int i = index; i < 10; i++)
 			array[i + 1] = array[i];
 		array[index] = elem;
 	}
+	*/
 	
 	public static void printArray(int A[]){
 		for (int x : A)
