@@ -5,11 +5,9 @@ public class array_insertion{
 
     public static void main(String args[]){
 		int[] x = new int[20];
-		int i = 0;
-		while (i<10){
-			x[i] = i;
-			i++;
-		}
+
+        for (int i = 0; i < 20; i++)
+            x[i] = i;
 		
 		sortedInsert(x,5);
 		printArray(x);

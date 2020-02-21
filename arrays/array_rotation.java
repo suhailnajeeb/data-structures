@@ -4,12 +4,10 @@
 public class array_rotation{
 
     public static void main(String args[]){
-		int[] x = new int[10];
-		int i = 0;
-		while (i<x.length){
-			x[i] = i;
-			i++;
-		}
+		int[] x = new int[20];
+
+        for (int i = 0; i < 20; i++)
+            x[i] = i;
 		
 		rotate(x, 5);
 		
