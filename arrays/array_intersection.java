@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 class array_intersection{
     public static void main(String args[]){
         int[] A = new int[] {1,2,2,5,8};
