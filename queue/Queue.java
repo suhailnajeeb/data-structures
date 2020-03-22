@@ -8,4 +8,3 @@ public interface Queue{
     Object[] toArray();
     int search(Object o);
 }
-
