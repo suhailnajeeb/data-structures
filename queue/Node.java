@@ -3,7 +3,7 @@ public class Node{
     Node next;
 
     public Node(Object x, Node n){
-        val = v;
+        val = x;
         next = n;
     }
 }
