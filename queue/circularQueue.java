@@ -1,3 +1,4 @@
+/*
 public class circularQueue implements Queue{
     int front;
     int size;
@@ -27,7 +28,7 @@ public class circularQueue implements Queue{
             throw new QueueOverflowException();
         else{
             data[(front + size)%capacity] = x;
-            size = (size + 1)%capacity;
+            size = size + 1;
         }
     }
 
@@ -83,3 +84,4 @@ public class circularQueue implements Queue{
     }
     
 }
+*/
