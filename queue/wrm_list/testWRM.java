@@ -7,7 +7,7 @@ class testWRM{
         patient p5 = new patient("Charles", 22, "B+ve");
 
 
-        wrmCircular wrm = new wrmCircular();
+        wrmList wrm = new wrmList();
         wrm.RegisterPatient(p1);
         wrm.RegisterPatient(p2);
 
